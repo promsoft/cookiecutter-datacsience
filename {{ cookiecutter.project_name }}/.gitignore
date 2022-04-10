@@ -1,0 +1,7 @@
+auth/
+data/
+models
+__pycache__/
+.python-version
+venv
+.ipynb_checkpoints

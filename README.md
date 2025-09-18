@@ -3,16 +3,26 @@
 
 {{cookiecutter.description}}
 
-Project Organization
+Организация проекта
 ------------
+auth - разного рода токены, ключи доступа, json-ключи и проч
+* data - данные
+  * raw - исходные данные, обычно сжатые
+  * transformed - какие-нибудь паркеты или json, полученные в результате обработки данных
+* experiments - для проверки каждой идеи заводится новая подпапка, в ней - эксперименты. Путь к модулям добавляется в пути.
+  * Readme.md В корне лежит  Readme.md, в нем список экспериментов с кратким описанием
+  * имя_эксперимента - в ней какие-то ноутбуки
+  * имя_эксперимента - в ней какие-то ноутбуки и так далее
+* misc - все, что непонятно куда складывать
+* models - хранить здесь обученные модели
+* modules - здесь храним переиспользуемые модули
+* papers - статьи на тему
+  * Readme.md - В корне лежит Readme.md, в нем список экспериментов с кратким описанием
+  * todo - в работу
+  *ИМЯ_СТАТЬИ - папка со статьей, заметкой, доп. материалами
+* reports - то что будем показывать клиенту
+  * results - итоговые рабочие воспроизводимые ноутбуки или питоновский код, которые генерируют отчеты
+  * misc - всякая фигня не код
+  * Readme.md - В корне лежит Readme.md
 
-    ├── README.md          <- The top-level README for developers using this project.
-    ├── data
-    │   ├── transformed    <- The final, canonical data sets for modeling.
-    │   └── raw            <- The original, immutable data dump.
-    ├── models             <- Trained and serialized models, model predictions, or model summaries
-    ├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-    ├── reports            <- Generated analysis as HTML, PDF, LaTeX, etc.
-    │   └── figures        <- Generated graphics and figures to be used in reporting
-    ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
-                              generated with `pip freeze > requirements.txt`
+Не обязательно должны быть все папки - пусть будут только те, что нужны в этом проекте.
